@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:13
+    volumes:
+      - ./dataset:/var/lib/postgresql/dataset
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - pg-363-p1:/var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: secret
+      PGDATA: /var/lib/postgresql/data/pgdata
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    ports:
+      - "53603:53603"
+      - "5050:80"
+    depends_on:
+      - postgres
+    volumes:
+      - pgadmin:/root/.pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@secret.com
+      PGADMIN_DEFAULT_PASSWORD: secret
+
+volumes:
+  pg-363-p1:
+  pgadmin:
