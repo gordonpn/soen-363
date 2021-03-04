@@ -21,7 +21,6 @@ group by m.year
 order by m.year asc) as temp where 
 m.rating = temp.highest_rating and m.year= temp.year
 order by m.year asc, m.title asc) as hrm)
-select hr.title, hr.year, hr.rating from highRating as hr where hr.rnk =1
 
 
 
