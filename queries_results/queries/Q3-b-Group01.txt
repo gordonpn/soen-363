@@ -1,0 +1,3 @@
+select a.name from movies as m, actors as a 
+where m.mid=a.mid and m.title= 'The Dark Knight' 
+order by a.name 
