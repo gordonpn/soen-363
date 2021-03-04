@@ -1,0 +1,2 @@
+The hypothesis is false, the movies with the most ratings are neiter
+the highest or lowest rated movies.
