@@ -1,0 +1,26 @@
+create view lowRating as 
+(select m.title, m.year, m.rating from movies as m, 
+(select m.year , min(m.rating) as lowest_rating from movies as m
+where m.year >= 2005 and m.year <= 2011
+group by m.year
+order by m.year asc) as temp where
+m.rating = temp.lowest_rating and m.year= temp.year);
+
+
+
+
+create view highRating as ( 
+select m.title, m.year, m.rating
+from movies as m, 
+(select m.year , max(m.rating) as highest_rating from movies as m
+where m.year >= 2005 and m.year <= 2011
+group by m.year
+order by m.year asc) as temp where 
+m.rating = temp.highest_rating and m.year= temp.year);
+
+
+Select * from 
+(select * from highRating
+union
+select * from lowRating) as hl
+order by hl.year, hl.rating, hl.title;
