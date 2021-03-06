@@ -1,17 +1,25 @@
-SELECT
-  CAREER_LENGTHS.NAME,
-  CAREER_LENGTHS.END_YEAR - CAREER_LENGTHS.START_YEAR AS LONGEVITY
-FROM (
-  SELECT
-    NAME,
-    MIN(YEAR) AS START_YEAR,
-    MAX(YEAR) AS END_YEAR
-  FROM
-    ACTORS
-    JOIN MOVIES ON ACTORS.MID = MOVIES.MID
-  GROUP BY
-    NAME) AS CAREER_LENGTHS
-ORDER BY
-  LONGEVITY DESC
-LIMIT 1;
+CREATE VIEW career_lengths AS (
+    SELECT
+        name,
+        (max(year) - min(year)) AS longevity
+    FROM
+        actors
+        JOIN movies ON actors.mid = movies.mid
+    GROUP BY
+        name
+    ORDER BY
+        longevity DESC);
 
+SELECT
+    name,
+    longevity
+FROM
+    career_lengths
+WHERE
+    longevity >= ALL (
+        SELECT
+            longevity
+        FROM
+            career_lengths)
+ORDER BY
+    name;
