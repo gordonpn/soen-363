@@ -1,0 +1,8 @@
+create view co_actors as (select a1.name, count(distinct(a2.name)) as num_co_actors from actors as a1, actors as a2
+where a1.mid = a2.mid and a2.name != a1.name
+group by a1.name)
+
+
+select * from co_actors as ca where 
+ca.num_co_actors = (select max(ca.num_co_actors) from co_actors as ca)
+order by ca.name
