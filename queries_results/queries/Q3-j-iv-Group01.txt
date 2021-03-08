@@ -1,0 +1,5 @@
+SELECT * 
+FROM co_actors
+EXCEPT (SELECT *
+	FROM co_actors as c
+	where c.name = 'Annette Nicole');
