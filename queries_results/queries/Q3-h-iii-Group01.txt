@@ -1,10 +1,9 @@
 CREATE VIEW no_flop AS
 SELECT * 
-FROM (SELECT * 
       FROM high_rating
       EXCEPT 
       SELECT *
-      FROM low_rating) AS every_no_flop;
+      FROM low_rating;
 
 SELECT nf.name, COUNT(m.mid) AS n
 FROM no_flop nf, actors a, movies m
