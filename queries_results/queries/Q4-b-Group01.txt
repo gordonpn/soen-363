@@ -1,0 +1,14 @@
+Indexing number of ratings in the movies table does reduce the query time, but not by much.
+Queries using LIKE would not benefit from indexing such as query Q3 E.
+Running the Q3 A query returns in 63 ms instead of 146 ms with the created index.
+Running the Q3 B query returns in 85 ms instead of 164 ms with the created index.
+Running the Q3 G query returns in 76 ms instead of 114 ms with the created index.
+Running the Q3 H-iii query returns in 55 ms instead of 377 ms with the created index.
+Running the Q3 I query returns in 826 ms ms instead of 997 ms with the created index.
+Running the Q3 J query returns in 85 ms instead of 164 ms with the created index.
+Running the Q3 J-i query returns in 82 ms instead of 103 ms with the created index.
+Running the Q3 J-ii query returns in 30 ms instead of 59 ms with the created index.
+Running the Q3 J-iii query returns in 72 ms instead of 115 ms with the created index.
+Running the Q3 J-iv query returns in 88 ms instead of 117 ms with the created index.
+Running the Q3 K-i query returns in 52 ms instead of 195 ms with the created index.
+Running the Q3 K-ii query returns in 27 sec 195 ms instead of 54 sec and 368 ms with the created index.
