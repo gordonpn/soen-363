@@ -1,3 +1,0 @@
-select m.title from movies as m, actors as a 
-where m.mid=a.mid and a.name= 'Daniel Craig' 
-order by title

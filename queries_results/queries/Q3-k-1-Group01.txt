@@ -1,3 +1,0 @@
-select a1.name, count(distinct(a2.name)) from actors as a1, actors as a2
-where a1.mid = a2.mid and a1.name = 'Tom Cruise' and a2.name != 'Tom Cruise'
-group by a1.name

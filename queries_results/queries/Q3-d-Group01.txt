@@ -1,2 +1,0 @@
-select m.title, m.year, m.rating from movies as m
-order by m.year asc,  m.rating desc
