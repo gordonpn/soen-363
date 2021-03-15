@@ -1,25 +1,26 @@
 CREATE VIEW career_lengths AS (
-    SELECT
-        name,
-        (max(year) - min(year)) AS longevity
-    FROM
-        actors
-        JOIN movies ON actors.mid = movies.mid
-    GROUP BY
-        name
-    ORDER BY
-        longevity DESC);
+  SELECT
+    name,
+    (max(year) - min(year)) AS longevity
+  FROM
+    actors
+    JOIN movies ON actors.mid = movies.mid
+  GROUP BY
+    name
+  ORDER BY
+    longevity DESC);
 
 SELECT
-    name,
-    longevity
+  name,
+  longevity
 FROM
-    career_lengths
+  career_lengths
 WHERE
-    longevity >= ALL (
-        SELECT
-            longevity
-        FROM
-            career_lengths)
+  longevity >= ALL (
+    SELECT
+      longevity
+    FROM
+      career_lengths)
 ORDER BY
-    name;
+  name;
+

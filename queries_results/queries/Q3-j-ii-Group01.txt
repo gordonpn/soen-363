@@ -1,10 +1,20 @@
-CREATE VIEW an_movies AS 
-SELECT mid
-FROM actors a
-WHERE a.name = 'Annette Nicole'; 
+CREATE VIEW an_movies AS
+SELECT
+  mid
+FROM
+  actors a
+WHERE
+  a.name = 'Annette Nicole';
 
-CREATE VIEW all_combinations AS 
-SELECT * 
-FROM an_movies, co_actors; 
+CREATE VIEW all_combinations AS
+SELECT
+  *
+FROM
+  an_movies,
+  co_actors;
 
-SELECT COUNT (*) FROM all_combinations;
+SELECT
+  COUNT(*)
+FROM
+  all_combinations;
+

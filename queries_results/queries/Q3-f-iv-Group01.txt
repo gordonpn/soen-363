@@ -8,7 +8,7 @@ WHERE
     SELECT
       MIN(m.rating)
     FROM
-      movies m
-  )
+      movies m)
 ORDER BY
-  m.mid ASC
+  m.mid ASC;
+

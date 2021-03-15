@@ -8,5 +8,5 @@ WHERE
     SELECT
       MAX(m.num_ratings)
     FROM
-      movies m
-  )
+      movies m);
+
