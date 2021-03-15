@@ -1,4 +1,4 @@
-CREATE VIEW lowest_rated AS
+CREATE OR REPLACE VIEW lowest_rated AS
 SELECT
   *
 FROM

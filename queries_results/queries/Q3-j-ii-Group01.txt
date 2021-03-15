@@ -1,4 +1,4 @@
-CREATE VIEW an_movies AS
+CREATE OR REPLACE VIEW an_movies AS
 SELECT
   mid
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
   a.name = 'Annette Nicole';
 
-CREATE VIEW all_combinations AS
+CREATE OR REPLACE VIEW all_combinations AS
 SELECT
   *
 FROM

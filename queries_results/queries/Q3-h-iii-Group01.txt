@@ -1,4 +1,4 @@
-CREATE VIEW no_flop AS
+CREATE OR REPLACE VIEW no_flop AS
 SELECT
   *
 FROM

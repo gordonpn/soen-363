@@ -1,4 +1,4 @@
-CREATE VIEW lowRating AS (
+CREATE OR REPLACE VIEW lowRating AS (
   SELECT
     m.title,
     m.year,
@@ -22,7 +22,7 @@ CREATE VIEW lowRating AS (
       m.rating = temp.lowest_rating
       AND m.year = temp.year);
 
-CREATE VIEW highRating AS (
+CREATE OR REPLACE VIEW highRating AS (
   SELECT
     m.title,
     m.year,

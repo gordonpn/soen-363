@@ -1,4 +1,4 @@
-CREATE VIEW highest_rated AS
+CREATE OR REPLACE VIEW highest_rated AS
 SELECT
   *
 FROM

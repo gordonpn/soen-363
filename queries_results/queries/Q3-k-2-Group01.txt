@@ -1,4 +1,4 @@
-CREATE VIEW co_actors AS (
+CREATE OR REPLACE VIEW co_actors AS (
   SELECT
     a1.name,
     count(DISTINCT (a2.name)) AS num_co_actors

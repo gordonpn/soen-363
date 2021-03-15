@@ -59,7 +59,7 @@ HAVING
 
 -- Only Movies table contains duplicates
 -- Create a view of Movies table without duplicates
-CREATE VIEW movies_no_dupes AS (
+CREATE OR REPLACE VIEW movies_no_dupes AS (
   SELECT DISTINCT ON (title, year)
     title,
     year,

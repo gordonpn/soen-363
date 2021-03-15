@@ -1,4 +1,4 @@
-CREATE VIEW high_rating AS SELECT DISTINCT
+CREATE OR REPLACE VIEW high_rating AS SELECT DISTINCT
   name
 FROM
   actors a,
@@ -12,7 +12,7 @@ SELECT
 FROM
   high_rating;
 
-CREATE VIEW low_rating AS SELECT DISTINCT
+CREATE OR REPLACE VIEW low_rating AS SELECT DISTINCT
   name
 FROM
   actors a,

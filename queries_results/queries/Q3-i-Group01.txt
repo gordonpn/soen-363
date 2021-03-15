@@ -1,4 +1,4 @@
-CREATE VIEW career_lengths AS (
+CREATE OR REPLACE VIEW career_lengths AS (
   SELECT
     name,
     (max(year) - min(year)) AS longevity

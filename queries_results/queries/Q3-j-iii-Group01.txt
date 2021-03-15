@@ -1,4 +1,4 @@
-CREATE VIEW non_existent AS
+CREATE OR REPLACE VIEW non_existent AS
 SELECT
   *
 FROM
