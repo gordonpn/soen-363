@@ -1,0 +1,61 @@
+version: "3.8"
+
+services:
+  postgres:
+    container_name: postgres-soen-363-p2
+    image: postgres:13
+    volumes:
+      # - ./dataset:/var/lib/postgresql/dataset
+      # - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - pg-363-p2:/var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: secret
+      PGDATA: /var/lib/postgresql/data/pgdata
+
+  pgadmin:
+    container_name: pgadmin-soen-363-p2
+    image: dpage/pgadmin4
+    ports:
+      - "53603:53603"
+      - "5050:80"
+    depends_on:
+      - postgres
+    volumes:
+      - pgadmin:/root/.pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@secret.com
+      PGADMIN_DEFAULT_PASSWORD: secret
+
+  mongo:
+    container_name: mongo-soen-363-p2
+    image: mongo:4
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-363-p2:/data/db
+      - ./nosql:/home
+      - ./nosql-init:/docker-entrypoint-initdb.d
+    environment:
+      MONGO_INITDB_DATABASE: soen-363
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+
+  mongo-express:
+    container_name: mongo-express-soen-363-p2
+    image: mongo-express
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+    depends_on:
+      - mongo
+
+volumes:
+  pg-363-p2:
+  pgadmin:
+  mongo-363-p2:
