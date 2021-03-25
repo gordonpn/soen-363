@@ -12,19 +12,19 @@ To start all the containers, use `docker-compose up`.
 
 ### About the dataset
 
-The dataset cannot be uploaded to GitHub because all the files exceed 100 MB.
-
 You must download the `switrs.sqlite` file from <https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs>.
 
 The `sqlite` file needs to be converted/exported to `csv`. On a Mac/Linux system you may use the bash script `./dataset/export_sqlite.sh`.
 
-**Warning**: May take a while to generate, it took my computer ~10 minutes for all 4 tables.
+Or simply unzip `dataset.zip` inside the `/dataset` directory.
+
+**Warning**: May take a while to generate, it took my computer ~10 minutes for all 3 tables.
 
 Move all the created `csv` files into the folder `dataset` inside of `phase-2`.
 
 Documentation of this dataset: <https://tims.berkeley.edu/help/SWITRS.php>
 
-Starting the postgres container for the first times takes ~25 minutes due to the initialization script.
+Starting the postgres container for the first times takes ~15 minutes due to the initialization script.
 
 ### NoSQL
 
