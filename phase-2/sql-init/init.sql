@@ -1,8 +1,3 @@
-CREATE TABLE case_ids (
-  case_id text NOT NULL PRIMARY KEY,
-  db_year int
-);
-
 CREATE TABLE collisions (
   case_id text NOT NULL,
   FOREIGN KEY (case_id) REFERENCES case_ids (case_id),
@@ -132,10 +127,6 @@ CREATE TABLE victims (
   victim_safety_equipment_2 text,
   victim_ejected text
 );
-
-COPY case_ids
-FROM
-  '/var/lib/postgresql/dataset/case_ids.csv' DELIMITER ',' csv header;
 
 COPY collisions
 FROM

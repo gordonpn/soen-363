@@ -16,17 +16,7 @@ The dataset cannot be uploaded to GitHub because all the files exceed 100 MB.
 
 You must download the `switrs.sqlite` file from <https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs>.
 
-The `sqlite` file needs to be converted/exported to `csv`. On a Mac/Linux system you may use the following commands one by one:
-
-```bash
-sqlite3 -header -csv switrs.sqlite "select * from case_ids where db_year = '2020';" > case_ids.csv
-
-sqlite3 -header -csv switrs.sqlite "select parties.* from parties join case_ids on case_ids.case_id = parties.case_id where case_ids.db_year = '2020';" > parties.csv
-
-sqlite3 -header -csv switrs.sqlite "select collisions.* from collisions join case_ids on case_ids.case_id = collisions.case_id where case_ids.db_year = '2020';" > collisions.csv
-
-sqlite3 -header -csv switrs.sqlite "select victims.* from victims join case_ids on case_ids.case_id = victims.case_id where case_ids.db_year = '2020';" > victims.csv
-```
+The `sqlite` file needs to be converted/exported to `csv`. On a Mac/Linux system you may use the bash script `./dataset/export_sqlite.sh`.
 
 **Warning**: May take a while to generate, it took my computer ~10 minutes for all 4 tables.
 
