@@ -2,6 +2,16 @@
 
 ## Getting Started
 
+**Important:** If you start the all compose services for the first time (without any prior initialized volumes), `pgadmin` and `mongo-express` will most likely fail because of the amount of time it takes to load the databases with the dataset. (The connection ports aren't ready until the initialization scripts are done running).
+
+To alleviate this, you must run `docker-compose up postgres` and `docker-compose up mongo` each separately first and wait for the databases to finish being seeded.
+
+**You need Docker and Docker-compose installed.**
+
+To start all the containers, use `docker-compose up`.
+
+### About the dataset
+
 The dataset cannot be uploaded to GitHub because all the files exceed 100 MB.
 
 You must download the `switrs.sqlite` file from <https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs>.
@@ -28,6 +38,8 @@ Starting the postgres container for the first times takes ~25 minutes due to the
 
 ### NoSQL
 
+At the project root directory, run `docker-compose up mongo mongo-express` and this will start the `mongo` and `mongo-express` service only.
+
 Mongo-express is available at <http://localhost:8081>
 
 |          |         |
@@ -35,11 +47,19 @@ Mongo-express is available at <http://localhost:8081>
 | username | root    |
 | password | example |
 
+#### Working with queries in MongoDB
+
+Unfortunately, the mongo-express interface doesn't allow running queries like the pgadmin interface does.
+
+Instead, the `phase-2/nosql` directory is mounted inside the container, in this directory you can write queries in separate `.js` files and they will be available inside the container.
+
+First, you must attach a shell, using the VSCode extension or by using the command `docker exec -it mongo-soen-363-p2 bash`. Then change directory into `/home` with `cd /home` and the scripts will be there.
+
+To execute a file named `test-mongo.js`, you can use the command `mongo test-mongo.js`.
+
 ### SQL
 
-You need Docker and Docker-compose installed.
-
-At the project root directory, run `docker-compose up` or `docker-compose up -d` or `make up` to spin up the containers.
+At the project root directory, run `docker-compose up postgres pgadmin` and this will start the `postgres` and `pgadmin` service only.
 
 The above will start PostgreSQL and pgAdmin containers.
 

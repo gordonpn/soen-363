@@ -28,33 +28,34 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@secret.com
       PGADMIN_DEFAULT_PASSWORD: secret
 
-  # mongo:
-  #   container_name: mongo-soen-363-p2
-  #   image: mongo:4
-  #   restart: unless-stopped
-  #   ports:
-  #     - "27017:27017"
-  #   volumes:
-  #     - mongo-363-p2:/data/db
-  #     - ./nosql:/home
-  #     - ./nosql-init:/docker-entrypoint-initdb.d
-  #   environment:
-  #     MONGO_INITDB_DATABASE: soen-363
-  #     MONGO_INITDB_ROOT_USERNAME: root
-  #     MONGO_INITDB_ROOT_PASSWORD: example
-  # mongo-express:
-  #   container_name: mongo-express-soen-363-p2
-  #   image: mongo-express
-  #   restart: unless-stopped
-  #   ports:
-  #     - "8081:8081"
-  #   environment:
-  #     ME_CONFIG_MONGODB_ADMINUSERNAME: root
-  #     ME_CONFIG_MONGODB_ADMINPASSWORD: example
-  #   depends_on:
-  #     - mongo
+  mongo:
+    container_name: mongo-soen-363-p2
+    build:
+      context: .
+      dockerfile: ./nosql/Dockerfile
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-363-p2:/data/db
+      - ./nosql:/home
+      - ./nosql-init:/docker-entrypoint-initdb.d
+    environment:
+      MONGO_INITDB_DATABASE: soen-363
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+
+  mongo-express:
+    container_name: mongo-express-soen-363-p2
+    image: mongo-express
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+    depends_on:
+      - mongo
 
 volumes:
   pg-363-p2:
   pgadmin:
-  # mongo-363-p2:
+  mongo-363-p2:
