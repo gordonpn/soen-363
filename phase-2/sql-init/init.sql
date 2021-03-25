@@ -1,6 +1,5 @@
 CREATE TABLE collisions (
-  case_id text NOT NULL,
-  FOREIGN KEY (case_id) REFERENCES case_ids (case_id),
+  case_id text NOT NULL PRIMARY KEY,
   jurisdiction int,
   officer_id text,
   reporting_district text,
@@ -79,7 +78,7 @@ CREATE TABLE collisions (
 CREATE TABLE parties (
   id int,
   case_id text NOT NULL,
-  FOREIGN KEY (case_id) REFERENCES case_ids (case_id),
+  FOREIGN KEY (case_id) REFERENCES collisions (case_id),
   party_number int NOT NULL,
   PRIMARY KEY (case_id, party_number),
   party_type text,
@@ -115,7 +114,7 @@ CREATE TABLE parties (
 CREATE TABLE victims (
   id int,
   case_id text NOT NULL,
-  FOREIGN KEY (case_id) REFERENCES case_ids (case_id),
+  FOREIGN KEY (case_id) REFERENCES collisions (case_id),
   party_number int NOT NULL,
   FOREIGN KEY (case_id, party_number) REFERENCES parties (case_id, party_number),
   victim_role text,
