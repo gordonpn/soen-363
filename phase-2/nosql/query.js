@@ -4,7 +4,7 @@ db.auth("example", "example");
 const query = db.collisions
   .find({
     road_condition_1: "holes",
-    weather_1: { $eq: "clear" },
+    weather_1: "clear",
     $or: [
       { collision_severity: "fatal" },
       { collision_severity: "severe injury" },
