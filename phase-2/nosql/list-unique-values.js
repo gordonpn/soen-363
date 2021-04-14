@@ -6,8 +6,8 @@ db.auth("example", "example");
 // use mongo-express to find the variable/column/property names
 
 // printjson(db.collisions.distinct("road_surface"));
-printjson(db.collisions.distinct("lighting"));
-printjson(db.collisions.distinct("alcohol_involved"));
+printjson(db.collisions.distinct("type_of_collision"));
+// printjson(db.collisions.distinct("pcf_violation_category"));
 // printjson(db.collisions.distinct("road_condition_2"));
 // printjson(db.collisions.distinct("weather_1"));
 // printjson(db.collisions.distinct("weather_2"));

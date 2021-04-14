@@ -4,12 +4,16 @@ db.auth("example", "example");
 const query = db.collisions
   .aggregate([
     {
+      $match: {
+        hit_and_run: "felony",
+        lighting: "daylight",
+      },
+    },
+    {
       $facet: {
         Alcohol: [
           {
             $match: {
-              hit_and_run: "felony",
-              lighting: "daylight",
               alcohol_involved: 1,
             },
           },
@@ -20,8 +24,6 @@ const query = db.collisions
         NoAlcohol: [
           {
             $match: {
-              hit_and_run: "felony",
-              lighting: "daylight",
               alcohol_involved: "",
             },
           },
