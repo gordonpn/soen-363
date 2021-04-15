@@ -1,4 +1,4 @@
-top 10 victim ages that had the most accidents in desc order
+Top 10 victim ages that had the most accidents in desc order
 
 SELECT victim_age, COUNT(*) total
 FROM victims
