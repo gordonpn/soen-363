@@ -13,5 +13,5 @@ db.auth("example", "example");
 // printjson(db.collisions.distinct("weather_2"));
 // printjson(db.collisions.distinct("road_surface"));
 // printjson(db.collisions.distinct("chp_beat_type"));
-printjson(db.parties.distinct("party_type"));
-// printjson(db.victims.distinct("victim_degree_of_injury"));
+// printjson(db.parties.distinct("party_type"));
+printjson(db.victims.distinct("victim_degree_of_injury"));

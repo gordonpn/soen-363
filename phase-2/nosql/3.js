@@ -1,6 +1,7 @@
 db = new Mongo().getDB("soen-363");
 db.auth("example", "example");
 
+const d = new Date();
 const query = db.collisions
   .aggregate([
     {
@@ -16,4 +17,5 @@ const query = db.collisions
 printjson({
   query: "What is the most common type of collision from speeding?",
   result: query,
+  "execution time": `${new Date() - d} ms`,
 });

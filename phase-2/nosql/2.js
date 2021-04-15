@@ -1,6 +1,7 @@
 db = new Mongo().getDB("soen-363");
 db.auth("example", "example");
 
+const d = new Date();
 const query = db.collisions
   .aggregate([
     {
@@ -46,4 +47,5 @@ printjson({
   query:
     "How many felony hit and runs in broad daylight have involvement of alcohol versus no involvement of alcohol?",
   result: query[0],
+  "execution time": `${new Date() - d} ms`,
 });

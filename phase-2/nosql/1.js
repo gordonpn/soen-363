@@ -1,6 +1,7 @@
 db = new Mongo().getDB("soen-363");
 db.auth("example", "example");
 
+const d = new Date();
 const query = db.collisions
   .find({
     road_condition_1: "holes",
@@ -16,4 +17,5 @@ printjson({
   query:
     "Number of collisions caused by holes on the road with clear weather condition that ended fatally or with severe injury:",
   result: query.length,
+  "execution time": `${new Date() - d} ms`,
 });

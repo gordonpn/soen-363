@@ -6,14 +6,22 @@ const query = db.parties
   .aggregate([
     {
       $match: {
-        party_age: { $gte: 65 },
+        party_age: { $gte: 95 },
         at_fault: 1,
         party_type: "driver",
       },
     },
     {
+      $lookup: {
+        from: "collisions",
+        localField: "case_id",
+        foreignField: "case_id",
+        as: "collision_info",
+      },
+    },
+    {
       $group: {
-        _id: "$movement_preceding_collision",
+        _id: "$collision_info.pedestrian_action",
         count: { $sum: 1 },
       },
     },
@@ -23,7 +31,7 @@ const query = db.parties
 
 printjson({
   query:
-    "What kind of maneuvers were seniors doing when they cause a collision?",
-  result: query.slice(0, 5),
+    "How likely is it that pedestrians are involved when drivers 95+ years old are at fault in a collision?",
+  result: query,
   "execution time": `${new Date() - d} ms`,
 });
