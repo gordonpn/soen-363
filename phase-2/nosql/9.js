@@ -43,9 +43,14 @@ const query = db.victims
     {
       $project: {
         "Likelyhood in percentage:": {
-          $divide: [
-            { $arrayElemAt: ["$Killed.Killed", 0] },
-            { $arrayElemAt: ["$NotKilled.NotKilled", 0] },
+          $multiply: [
+            {
+              $divide: [
+                { $arrayElemAt: ["$Killed.Killed", 0] },
+                { $arrayElemAt: ["$NotKilled.NotKilled", 0] },
+              ],
+            },
+            100,
           ],
         },
       },
