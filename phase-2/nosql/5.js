@@ -18,12 +18,13 @@ const query = db.parties
       },
     },
     { $sort: { count: -1 } },
+    { $limit: 5 },
   ])
   .toArray();
 
 printjson({
   query:
     "What kind of maneuvers were seniors doing when they cause a collision?",
-  result: query.slice(0, 5),
+  result: query,
   "execution time": `${new Date() - d} ms`,
 });

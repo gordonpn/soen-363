@@ -19,12 +19,13 @@ const query = db.collisions
       },
     },
     { $sort: { count: -1 } },
+    { $limit: 5 },
   ])
   .toArray();
 
 printjson({
   query:
     "Are pedestrians usually involved, and how severe is the collision when the road surface is slippery, snowy, or wet?",
-  result: query.slice(0, 5),
+  result: query,
   "execution time": `${new Date() - d} ms`,
 });
