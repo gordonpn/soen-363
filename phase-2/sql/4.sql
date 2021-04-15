@@ -1,4 +1,4 @@
-Car brands that have the most fatal accidents
+-- Car brands that have the most fatal accidents
 
 
 create or replace view fatal_collisions AS 

@@ -1,4 +1,4 @@
-Road conditions that causes the most accidents
+-- Road conditions that causes the most accidents
 
 
 select road_surface, road_condition_1, road_condition_2 ,lighting, count(*)  from collisions 
