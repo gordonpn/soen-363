@@ -45,7 +45,7 @@ Instead, the `phase-2/nosql` directory is mounted inside the container, in this 
 
 First, you must attach a shell, using the VSCode extension or by using the command `docker exec -it mongo-soen-363-p2 bash`. Then change directory into `/home` with `cd /home` and the scripts will be there.
 
-To execute a file named `test-mongo.js`, you can use the command `mongo test-mongo.js`.
+To execute a file named `example.js`, you can use the command `mongo example.js`.
 
 ### SQL
 
