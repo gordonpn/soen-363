@@ -42,7 +42,7 @@ const query = db.victims
     },
     {
       $project: {
-        "Likelyhood in percentage:": {
+        "probability (%):": {
           $multiply: [
             {
               $divide: [
@@ -59,7 +59,7 @@ const query = db.victims
   .toArray();
 
 printjson({
-  query: "What is the likelyhood of death after being ejected from a car?",
+  query: "What is the probability of death after being ejected from a car?",
   result: query[0],
   "execution time": `${new Date() - d} ms`,
 });
