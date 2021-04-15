@@ -24,7 +24,14 @@ const query = db.victims
         NotKilled: [
           {
             $match: {
-              victim_degree_of_injury: { $ne: "killed" },
+              victim_degree_of_injury: {
+                $in: [
+                  "severe injury",
+                  "other visible injury",
+                  "no injury",
+                  "complaint of pain",
+                ],
+              },
             },
           },
           {
@@ -47,8 +54,7 @@ const query = db.victims
   .toArray();
 
 printjson({
-  query:
-    "What is the likelyhood of death after being ejected from a car?",
+  query: "What is the likelyhood of death after being ejected from a car?",
   result: query[0],
   "execution time": `${new Date() - d} ms`,
 });
