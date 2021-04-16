@@ -1,4 +1,4 @@
-Victim id of all males under 25 that have been killed in an accident that are of black decent 
+-- Victim id of all males under 25 that have been killed in an accident that are of black decent 
 
 SELECT v.id 
 FROM victims v, parties p 

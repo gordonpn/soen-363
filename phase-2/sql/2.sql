@@ -1,4 +1,4 @@
-How many were uninjured in the passenger seat after being fully ejected 
+-- How many were uninjured in the passenger seat after being fully ejected 
 
 SELECT COUNT(*)  
 FROM victims v

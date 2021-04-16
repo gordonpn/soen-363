@@ -1,4 +1,4 @@
-How many were female drivers under 21 were severely injured 
+-- How many were female drivers under 21 were severely injured 
 
 SELECT COUNT(*) 
 FROM victims v
