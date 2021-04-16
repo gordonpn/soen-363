@@ -1,55 +1,66 @@
 -- Car brands that have the most fatal accidents
+CREATE
+OR REPLACE VIEW fatal_collisions AS
+SELECT
+    CASE
+        WHEN vehicle_make LIKE 'TOY%' THEN 'TOYOTA'
+        WHEN vehicle_make LIKE 'HON%' THEN 'HONDA'
+        WHEN vehicle_make LIKE 'FOR%' THEN 'FORD'
+        WHEN vehicle_make LIKE 'CHEV%' THEN 'CHEVROLET'
+        WHEN vehicle_make LIKE 'NISS%' THEN 'NISSAN'
+        WHEN vehicle_make LIKE 'HAR%'
+        OR vehicle_make IN ('HD', 'H.D.') THEN 'HARLEY-DAVIDSON'
+        WHEN vehicle_make LIKE 'BMW' THEN 'BMW'
+        WHEN vehicle_make LIKE 'YAM%' THEN 'YAMAHA'
+        WHEN vehicle_make LIKE 'GMC' THEN 'GMC'
+        WHEN vehicle_make LIKE 'KIA' THEN 'KIA'
+        WHEN vehicle_make LIKE 'DOD%' THEN 'DODGE'
+        WHEN vehicle_make LIKE 'JEEP' THEN 'JEEP'
+        WHEN vehicle_make LIKE 'SUZ%' THEN 'SUZUKI'
+        WHEN vehicle_make LIKE 'HYU%' THEN 'HYUNDAI'
+        WHEN vehicle_make LIKE 'MAZ%' THEN 'MAZDA'
+        WHEN vehicle_make LIKE 'INF%' THEN 'INFINITY'
+        WHEN vehicle_make LIKE 'KAW%' THEN 'KAWASAKI'
+        WHEN vehicle_make LIKE 'MER%' THEN 'MERCEDES-BENZ'
+        WHEN vehicle_make LIKE 'VOLK%'
+        OR vehicle_make = 'VW' THEN 'VOLKSWAGEN'
+        WHEN vehicle_make LIKE 'LEX%' THEN 'LEXUS'
+        WHEN vehicle_make LIKE 'MIT%' THEN 'MITSUBISHI'
+        WHEN vehicle_make LIKE 'SUB%' THEN 'SUBARU'
+        WHEN vehicle_make LIKE 'ACU%' THEN 'ACURA'
+        WHEN vehicle_make LIKE 'POR%' THEN 'PORSCHE'
+        WHEN vehicle_make LIKE 'TES%' THEN 'TESLA'
+        WHEN vehicle_make LIKE 'CHR%' THEN 'CHRYSLER'
+        WHEN vehicle_make LIKE 'PON%' THEN 'PONTIAC'
+        WHEN vehicle_make LIKE 'SAT%' THEN 'SATURN'
+        WHEN vehicle_make LIKE 'CAD%' THEN 'CADILAC'
+        WHEN vehicle_make LIKE 'VOLV%' THEN 'VOLVO'
+        WHEN vehicle_make LIKE 'BUI%' THEN 'BUICK'
+        WHEN vehicle_make LIKE 'LINC%' THEN 'LINCOLN'
+        WHEN vehicle_make LIKE 'MIN%' THEN 'MINI'
+        WHEN vehicle_make LIKE 'AUD%' THEN 'AUDI'
+        WHEN vehicle_make LIKE 'SCI%' THEN 'SCION'
+    END AS brand,
+    count(victim_degree_of_injury)
+FROM
+    victims AS v,
+    parties AS p
+WHERE
+    v.case_id = p.case_id
+    AND v.party_number = p.party_number
+    AND v.victim_degree_of_injury = 'killed'
+    AND p.vehicle_make IS NOT NULL
+GROUP BY
+    vehicle_make;
 
-
-create or replace view fatal_collisions AS 
-select case 
-when vehicle_make like 'TOY%' THEN 'TOYOTA'
-when vehicle_make like 'HON%' THEN 'HONDA'
-when vehicle_make like 'FOR%' THEN 'FORD'
-when vehicle_make like 'CHEV%' THEN 'CHEVROLET'
-when vehicle_make like 'NISS%' THEN 'NISSAN'
-when vehicle_make like 'HAR%' or vehicle_make in ('HD', 'H.D.') THEN 'HARLEY-DAVIDSON'
-when vehicle_make like 'BMW' THEN 'BMW'
-when vehicle_make like 'YAM%' THEN 'YAMAHA'
-when vehicle_make like 'GMC' THEN 'GMC'
-when vehicle_make like 'KIA' THEN 'KIA'
-when vehicle_make like 'DOD%' THEN 'DODGE'
-when vehicle_make like 'JEEP' THEN 'JEEP'
-when vehicle_make like 'SUZ%' THEN 'SUZUKI'
-when vehicle_make like 'HYU%' THEN 'HYUNDAI'
-when vehicle_make like 'MAZ%' THEN 'MAZDA'
-when vehicle_make like 'INF%' THEN 'INFINITY'
-when vehicle_make like 'KAW%' THEN 'KAWASAKI'
-when vehicle_make like 'MER%' THEN 'MERCEDES-BENZ'
-when vehicle_make like 'VOLK%' or vehicle_make ='VW' THEN 'VOLKSWAGEN'
-when vehicle_make like 'LEX%' THEN 'LEXUS'
-when vehicle_make like 'MIT%' THEN 'MITSUBISHI'
-when vehicle_make like 'SUB%'  THEN 'SUBARU'
-when vehicle_make like 'ACU%'  THEN 'ACURA'
-when vehicle_make like 'POR%'  THEN 'PORSCHE'
-when vehicle_make like 'TES%'  THEN 'TESLA'
-when vehicle_make like 'CHR%'  THEN 'CHRYSLER'
-when vehicle_make like 'PON%'  THEN 'PONTIAC'
-when vehicle_make like 'SAT%'  THEN 'SATURN'
-when vehicle_make like 'CAD%'  THEN 'CADILAC'
-when vehicle_make like 'VOLV%'  THEN 'VOLVO'
-when vehicle_make like 'BUI%'  THEN 'BUICK'
-when vehicle_make like 'LINC%'  THEN 'LINCOLN'
-when vehicle_make like 'MIN%'  THEN 'MINI'
-when vehicle_make like 'AUD%'  THEN 'AUDI'
-when vehicle_make like 'SCI%'  THEN 'SCION'
-END as brand,
-count(victim_degree_of_injury) 
-from victims as v, parties as p  
-where v.case_id=p.case_id and v.party_number=p.party_number 
-and v.victim_degree_of_injury = 'killed'
-and p.vehicle_make is not null
-group by vehicle_make 
-
-
-
-select brand, sum(count) as count from fatal_collisions
-where brand is not null
-group by brand 
-order by count desc
-
+SELECT
+    brand,
+    sum(count) AS count
+FROM
+    fatal_collisions
+WHERE
+    brand IS NOT NULL
+GROUP BY
+    brand
+ORDER BY
+    count DESC
