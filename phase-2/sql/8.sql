@@ -14,3 +14,5 @@ WHERE
 	AND p.party_race IS NOT NULL
 GROUP BY
 	p.party_race
+ORDER BY 
+	KILLED_BY_HIT_AND_RUN DESC
