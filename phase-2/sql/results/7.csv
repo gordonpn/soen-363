@@ -1,0 +1,103 @@
+"movement_preceding_collision","road_surface","lighting","count","execution time"
+"proceeding straight","dry","daylight",2686,"449 msec"
+"proceeding straight","dry","dark with street lights",1140
+"other","dry","daylight",1071
+"other","dry","dark with street lights",545
+"stopped","dry","daylight",274
+"proceeding straight","wet","dark with street lights",274
+"proceeding straight","wet","daylight",187
+"proceeding straight","dry","dusk or dawn",184
+"entering traffic","dry","daylight",103
+"stopped","dry","dark with street lights",100
+"other","wet","dark with street lights",83
+"proceeding straight","dry","dark with no street lights",83
+"other","dry","dusk or dawn",68
+"entering traffic","dry","dark with street lights",63
+"other","wet","daylight",53
+"other","dry","dark with no street lights",42
+"parked","dry","daylight",37
+"proceeding straight","wet","dusk or dawn",35
+"proceeding straight",NULL,"dark with street lights",20
+"making left turn","dry","daylight",19
+"proceeding straight",NULL,"daylight",18
+"proceeding straight","dry",NULL,17
+"parked","dry","dark with street lights",16
+"stopped","wet","daylight",15
+"stopped","dry","dark with no street lights",13
+"proceeding straight","wet","dark with no street lights",13
+"stopped","dry","dusk or dawn",12
+"other","dry",NULL,12
+"proceeding straight",NULL,NULL,12
+"other",NULL,"daylight",11
+"crossed into opposing lane","dry","daylight",11
+"entering traffic","dry","dusk or dawn",11
+"entering traffic","wet","dark with street lights",11
+"stopped","wet","dark with street lights",11
+"making right turn","dry","daylight",11
+"crossed into opposing lane","dry","dark with street lights",10
+"other",NULL,"dark with street lights",8
+"other",NULL,NULL,8
+"proceeding straight","dry","dark with street lights not functioning",7
+"backing","dry","daylight",7
+"ran off road","dry","daylight",7
+"making right turn","dry","dark with street lights",7
+"other","wet","dusk or dawn",6
+"parked","dry","dusk or dawn",6
+"other","wet","dark with no street lights",6
+"other","dry","dark with street lights not functioning",5
+"making left turn","dry","dark with street lights",5
+"entering traffic","wet","daylight",5
+"proceeding straight","wet",NULL,5
+"stopped",NULL,"dark with street lights",4
+"entering traffic","dry","dark with no street lights",4
+"entering traffic","dry",NULL,4
+"other",NULL,"dark with no street lights",4
+"traveling wrong way","dry","daylight",4
+"making right turn","wet","dark with street lights",4
+"stopped",NULL,NULL,3
+"stopped","wet","dusk or dawn",3
+"making left turn","dry","dusk or dawn",3
+"traveling wrong way","wet","daylight",3
+"proceeding straight",NULL,"dark with no street lights",3
+"parked","dry","dark with no street lights",3
+"proceeding straight",NULL,"dusk or dawn",3
+"parked","wet","daylight",3
+"other unsafe turning","dry","daylight",2
+"backing","dry",NULL,2
+"making left turn","wet","daylight",2
+"merging","dry","daylight",2
+"other","wet",NULL,2
+"proceeding straight","slippery","daylight",2
+"proceeding straight","snowy","dark with no street lights",2
+"proceeding straight","snowy","daylight",2
+"slowing/stopping","dry","daylight",2
+"stopped","dry",NULL,2
+"stopped","wet","dark with no street lights",2
+"stopped",NULL,"daylight",2
+"parking maneuver","dry","dark with street lights",1
+"parked",NULL,"dark with street lights",1
+"backing","dry","dark with street lights",1
+"other",NULL,"dusk or dawn",1
+"other","wet","dark with street lights not functioning",1
+"other","snowy","dark with street lights",1
+"other","slippery","daylight",1
+"other","H","daylight",1
+"ran off road","wet","dusk or dawn",1
+"traveling wrong way","dry","dark with street lights",1
+"slowing/stopping","wet","dark with street lights",1
+"making u-turn","dry","dark with street lights",1
+"making right turn","dry","dusk or dawn",1
+"making left turn",NULL,"dusk or dawn",1
+"making left turn","wet","dusk or dawn",1
+"backing","snowy","dark with street lights",1
+"traveling wrong way","wet","dark with street lights",1
+"entering traffic",NULL,"daylight",1
+"entering traffic",NULL,"dark with street lights",1
+"crossed into opposing lane","dry","dusk or dawn",1
+"changing lanes","dry","daylight",1
+"backing","dry","dusk or dawn",1
+"changing lanes","dry","dark with street lights",1
+"proceeding straight","slippery","dark with no street lights",1
+"passing other vehicle","dry","daylight",1
+"proceeding straight","wet","dark with street lights not functioning",1
+"parking maneuver","dry","daylight",1

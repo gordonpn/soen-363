@@ -1,0 +1,400 @@
+"road_surface","road_condition_1","road_condition_2","lighting","count","execution time"
+"dry","normal",NULL,"daylight",410273,"1 secs 851 msec"
+"dry","normal",NULL,"dark with street lights",133325
+"dry","normal",NULL,"dark with no street lights",54483
+"wet","normal",NULL,"daylight",31840
+"dry","normal",NULL,"dusk or dawn",23070
+"wet","normal",NULL,"dark with street lights",17512
+"wet","normal",NULL,"dark with no street lights",8945
+"dry","construction",NULL,"daylight",6335
+"wet","normal",NULL,"dusk or dawn",2782
+NULL,"normal",NULL,"daylight",1807
+"dry","construction",NULL,"dark with street lights",1713
+"dry","construction","reduced width","daylight",1655
+"dry","construction",NULL,"dark with no street lights",1586
+"dry",NULL,NULL,"daylight",1435
+NULL,"normal",NULL,"dark with street lights",1304
+"snowy","normal",NULL,"daylight",1296
+"dry","normal",NULL,NULL,1134
+"dry","normal",NULL,"dark with street lights not functioning",1084
+"dry","obstruction",NULL,"daylight",1073
+"dry","holes",NULL,"daylight",834
+"dry","other",NULL,"daylight",791
+"dry",NULL,NULL,"dark with street lights",730
+NULL,NULL,NULL,NULL,653
+"dry","construction","reduced width","dark with street lights",621
+"dry","construction","normal","daylight",612
+"snowy","normal",NULL,"dark with no street lights",549
+"dry","loose material",NULL,"daylight",468
+"dry","obstruction",NULL,"dark with no street lights",467
+"dry","construction","reduced width","dark with no street lights",386
+"dry","reduced width",NULL,"daylight",381
+"dry","obstruction",NULL,"dark with street lights",354
+"wet","construction",NULL,"daylight",285
+"dry","other",NULL,"dark with street lights",269
+"dry","construction",NULL,"dusk or dawn",268
+"wet","flooded",NULL,"daylight",258
+"wet",NULL,NULL,"dark with street lights",196
+"dry","holes",NULL,"dark with street lights",188
+"snowy","normal",NULL,"dark with street lights",179
+"wet",NULL,NULL,"daylight",175
+"wet","other",NULL,"daylight",175
+NULL,"normal",NULL,NULL,174
+"wet","normal",NULL,"dark with street lights not functioning",164
+"slippery","normal",NULL,"daylight",156
+"wet","normal",NULL,NULL,152
+NULL,"holes","normal","daylight",145
+"dry","holes","normal","daylight",144
+"wet","construction","reduced width","daylight",137
+"wet","flooded",NULL,"dark with street lights",136
+"dry","other",NULL,"dark with no street lights",134
+"wet","other",NULL,"dark with street lights",133
+"wet","flooded",NULL,"dark with no street lights",131
+"snowy","other",NULL,"daylight",129
+"dry","loose material",NULL,"dark with no street lights",122
+"dry","construction","normal","dark with street lights",110
+"snowy","normal",NULL,"dusk or dawn",107
+"wet","construction",NULL,"dark with street lights",106
+"wet","construction",NULL,"dark with no street lights",106
+"dry",NULL,NULL,"dusk or dawn",104
+"dry","construction","normal","dark with no street lights",103
+NULL,"normal",NULL,"dusk or dawn",99
+NULL,NULL,NULL,"daylight",99
+"dry","reduced width",NULL,"dark with street lights",86
+"dry","obstruction","construction","daylight",82
+"dry","loose material",NULL,"dark with street lights",76
+NULL,"normal",NULL,"dark with no street lights",74
+"dry","construction","reduced width","dusk or dawn",71
+"wet","obstruction",NULL,"dark with no street lights",69
+"dry","reduced width",NULL,"dark with no street lights",68
+"wet","holes",NULL,"daylight",67
+"dry","holes",NULL,"dark with no street lights",66
+"snowy","other",NULL,"dark with no street lights",66
+NULL,NULL,NULL,"dark with street lights",64
+"dry","other",NULL,"dusk or dawn",62
+"wet","obstruction",NULL,"dark with street lights",61
+"slippery","other",NULL,"daylight",61
+"H","normal",NULL,"daylight",60
+"slippery","normal",NULL,"dark with street lights",58
+"wet","construction","reduced width","dark with street lights",54
+"dry","obstruction",NULL,"dusk or dawn",51
+"dry","loose material","construction","daylight",50
+"dry","holes","normal","dark with street lights",50
+"wet","obstruction",NULL,"daylight",50
+"wet","loose material",NULL,"daylight",49
+"snowy","reduced width",NULL,"daylight",48
+"dry","obstruction","normal","daylight",47
+"dry",NULL,NULL,"dark with no street lights",47
+"wet","holes",NULL,"dark with street lights",46
+"dry","holes",NULL,"dusk or dawn",44
+"dry","other","normal","daylight",41
+"dry","loose material","normal","daylight",41
+"dry","loose material",NULL,"dusk or dawn",39
+"wet","other",NULL,"dark with no street lights",38
+NULL,"other",NULL,NULL,38
+"dry","obstruction","construction","dark with street lights",37
+"wet","construction","reduced width","dark with no street lights",36
+"dry","reduced width","normal","daylight",36
+"dry","construction",NULL,"dark with street lights not functioning",33
+"dry",NULL,NULL,NULL,31
+"dry","obstruction","reduced width","daylight",31
+"wet","reduced width",NULL,"daylight",31
+"slippery","normal",NULL,"dark with no street lights",31
+"dry","reduced width",NULL,"dusk or dawn",29
+"dry","obstruction","construction","dark with no street lights",29
+"dry","construction","normal","dusk or dawn",28
+"wet","construction","normal","daylight",28
+"wet","loose material",NULL,"dark with no street lights",28
+"dry","holes","loose material","daylight",27
+"snowy","reduced width",NULL,"dark with no street lights",26
+"wet","construction",NULL,"dusk or dawn",26
+"dry","holes","construction","daylight",24
+"wet","loose material",NULL,"dark with street lights",24
+"dry","construction","other","daylight",24
+"wet",NULL,NULL,"dusk or dawn",23
+"snowy","other",NULL,"dusk or dawn",23
+"wet","other",NULL,"dusk or dawn",22
+"dry","obstruction","normal","dark with street lights",22
+"snowy","other",NULL,"dark with street lights",19
+"dry","obstruction","normal","dark with no street lights",18
+"snowy","loose material",NULL,"daylight",17
+"wet","holes",NULL,"dark with no street lights",17
+"slippery","loose material",NULL,"daylight",17
+"wet","flooded",NULL,"dusk or dawn",16
+"wet",NULL,NULL,"dark with no street lights",15
+"dry","other",NULL,NULL,15
+"snowy","holes",NULL,"daylight",15
+NULL,"holes",NULL,"daylight",15
+NULL,"other",NULL,"daylight",15
+"wet","obstruction",NULL,"dusk or dawn",14
+"slippery","other",NULL,"dusk or dawn",13
+NULL,NULL,NULL,"dusk or dawn",13
+NULL,"other",NULL,"dark with street lights",13
+"wet","holes",NULL,"dusk or dawn",13
+"wet","reduced width",NULL,"dark with no street lights",12
+"wet",NULL,NULL,NULL,12
+"slippery","other",NULL,"dark with street lights",12
+"dry","loose material","construction","dark with no street lights",11
+NULL,"construction",NULL,"daylight",11
+"H","construction",NULL,"daylight",11
+"slippery","normal",NULL,"dusk or dawn",11
+"dry","obstruction","other","daylight",11
+"dry","holes","construction","dark with no street lights",11
+"wet","other","normal","daylight",10
+"dry","flooded",NULL,"daylight",10
+"wet","loose material",NULL,"dusk or dawn",10
+"dry","loose material","obstruction","dark with street lights",9
+"slippery","other",NULL,"dark with no street lights",9
+"dry","loose material","normal","dark with no street lights",9
+"slippery","loose material",NULL,"dark with no street lights",9
+"dry","obstruction",NULL,"dark with street lights not functioning",9
+NULL,"holes","normal","dark with street lights",9
+"dry","flooded","normal","daylight",9
+"wet","construction","reduced width","dusk or dawn",9
+"dry","obstruction","reduced width","dark with street lights",8
+"dry","loose material","obstruction","daylight",8
+"wet","construction","normal","dark with street lights",8
+"dry","reduced width","other","daylight",8
+"dry","other",NULL,"dark with street lights not functioning",8
+"snowy","loose material","reduced width","daylight",8
+"wet","reduced width",NULL,"dark with street lights",8
+"dry","holes","loose material","dark with no street lights",8
+"dry","holes","construction","dark with street lights",8
+"H","holes",NULL,"daylight",8
+"dry","holes","normal","dusk or dawn",7
+"dry","holes","normal","dark with no street lights",7
+"snowy","obstruction",NULL,"daylight",7
+"snowy","holes",NULL,"dark with street lights",7
+"dry","reduced width","normal","dark with street lights",7
+"dry","flooded",NULL,"dark with street lights",7
+"dry","holes","other","daylight",7
+"dry","loose material","other","daylight",7
+"wet","holes","normal","daylight",7
+"dry","loose material","normal","dark with street lights",7
+"snowy","loose material",NULL,"dark with no street lights",7
+"wet","flooded","normal","daylight",7
+"slippery","flooded",NULL,"daylight",6
+"slippery","obstruction",NULL,"daylight",6
+"dry","other","normal","dark with street lights",6
+"dry","other","normal","dark with no street lights",6
+"dry","holes","normal",NULL,6
+"dry","obstruction","construction","dusk or dawn",6
+"slippery","holes",NULL,"daylight",6
+"wet","construction","normal","dark with no street lights",6
+"wet","holes","flooded","daylight",5
+"dry","holes","reduced width","daylight",5
+"dry","construction","other","dark with no street lights",5
+"snowy","loose material",NULL,"dark with street lights",5
+"dry","obstruction","reduced width","dark with no street lights",5
+NULL,"loose material",NULL,"daylight",5
+"dry","flooded","normal","dark with street lights",5
+"snowy","obstruction",NULL,"dark with no street lights",5
+"dry","obstruction","other","dark with no street lights",5
+"snowy","reduced width","other","daylight",5
+"snowy","reduced width",NULL,"dark with street lights",5
+"wet","construction",NULL,"dark with street lights not functioning",5
+"dry","loose material","obstruction","dark with no street lights",5
+"wet","holes","construction","dark with no street lights",5
+"slippery",NULL,NULL,"daylight",5
+NULL,"reduced width",NULL,"daylight",4
+"wet","construction","flooded","dark with street lights",4
+NULL,"holes","normal",NULL,4
+"dry",NULL,NULL,"dark with street lights not functioning",4
+"snowy","holes",NULL,"dark with no street lights",4
+"snowy","reduced width",NULL,"dusk or dawn",4
+"dry","flooded",NULL,"dark with no street lights",4
+"wet","reduced width",NULL,"dusk or dawn",4
+"wet","obstruction","reduced width","daylight",4
+"wet","holes","normal","dark with street lights",4
+"snowy","flooded",NULL,"daylight",4
+"dry","construction",NULL,NULL,4
+"wet","flooded","normal","dark with street lights",4
+"slippery","construction",NULL,"daylight",4
+"wet","flooded","normal","dark with no street lights",4
+"dry","holes","loose material","dark with street lights",4
+"wet","obstruction","construction","dark with street lights",4
+"dry","holes",NULL,NULL,4
+"wet","obstruction","construction","daylight",4
+"dry","loose material","reduced width","daylight",4
+"wet","construction","normal","dusk or dawn",4
+"wet","obstruction","other","dark with street lights",4
+NULL,NULL,NULL,"dark with no street lights",3
+NULL,"holes",NULL,"dark with street lights",3
+NULL,"holes",NULL,NULL,3
+"H","normal",NULL,"dark with street lights",3
+"snowy","loose material","reduced width","dark with no street lights",3
+"slippery","construction",NULL,"dark with street lights",3
+"wet","other",NULL,"dark with street lights not functioning",3
+"wet","obstruction",NULL,"dark with street lights not functioning",3
+"dry","reduced width",NULL,NULL,3
+"dry","obstruction","other","dark with street lights",3
+"snowy","reduced width","other","dark with no street lights",3
+"dry","obstruction","normal","dusk or dawn",3
+"wet","loose material","flooded","dark with no street lights",3
+"snowy",NULL,NULL,"dark with street lights",3
+"snowy",NULL,NULL,"daylight",3
+"wet","obstruction","other","dark with no street lights",3
+"wet","obstruction","normal","dark with no street lights",3
+"dry","loose material","other","dark with no street lights",3
+"dry","loose material","normal","dusk or dawn",3
+"wet","holes","flooded","dark with street lights",3
+"wet","holes","loose material","dark with no street lights",3
+"wet","holes","loose material","dark with street lights",3
+"dry","loose material","construction","dark with street lights",3
+NULL,"construction",NULL,"dark with street lights",3
+NULL,"construction",NULL,NULL,3
+"slippery","loose material",NULL,"dark with street lights",3
+"snowy","normal",NULL,"dark with street lights not functioning",3
+"dry","construction","reduced width","dark with street lights not functioning",2
+"slippery",NULL,NULL,"dark with street lights",2
+"dry","reduced width","other","dark with street lights",2
+"dry","reduced width","normal","dark with no street lights",2
+"wet","obstruction","normal","dark with street lights",2
+"wet","construction","other","daylight",2
+"snowy","obstruction",NULL,"dusk or dawn",2
+"dry","loose material","other","dusk or dawn",2
+"wet","construction","reduced width","dark with street lights not functioning",2
+NULL,"construction",NULL,"dark with no street lights",2
+"snowy","loose material","normal","dark with no street lights",2
+"dry","loose material","other","dark with street lights",2
+"wet","reduced width","flooded","dark with no street lights",2
+"wet","loose material","flooded","dark with street lights",2
+NULL,"other","normal","daylight",2
+"H","holes",NULL,"dusk or dawn",2
+"wet","construction",NULL,NULL,2
+NULL,"obstruction",NULL,"dark with street lights",2
+"slippery","loose material",NULL,"dusk or dawn",2
+"dry","loose material","construction","dusk or dawn",2
+"wet","flooded","other","dark with street lights",2
+"slippery","holes",NULL,"dark with street lights",2
+"snowy","flooded",NULL,"dark with street lights",2
+"wet","flooded",NULL,"dark with street lights not functioning",2
+"wet","loose material","other","dark with no street lights",2
+NULL,"construction","reduced width","daylight",2
+"snowy","construction",NULL,"dark with street lights",2
+"snowy","flooded",NULL,"dark with no street lights",2
+"dry","holes",NULL,"dark with street lights not functioning",2
+"wet","loose material","other","daylight",2
+NULL,"construction",NULL,"dusk or dawn",2
+"wet","loose material","obstruction","dark with no street lights",2
+"slippery","holes",NULL,"dusk or dawn",2
+"wet","reduced width","normal","dark with no street lights",2
+"wet","reduced width","normal","daylight",2
+"wet","holes","loose material","daylight",2
+"wet","holes",NULL,NULL,2
+"snowy","other",NULL,NULL,2
+"dry","holes","obstruction","daylight",2
+"wet","holes","normal","dark with no street lights",2
+"snowy","reduced width","other","dark with street lights",2
+"wet","loose material","normal","daylight",2
+NULL,"loose material",NULL,"dark with no street lights",2
+"dry","flooded",NULL,NULL,2
+"wet","obstruction","reduced width","dark with no street lights",2
+"dry","reduced width",NULL,"dark with street lights not functioning",2
+"wet","holes","normal","dusk or dawn",2
+"slippery","loose material","construction","daylight",2
+NULL,NULL,NULL,"dark with street lights not functioning",2
+"slippery","loose material","other","daylight",2
+"snowy","other","normal","daylight",2
+"dry","reduced width","other","dark with no street lights",2
+"slippery","obstruction",NULL,"dark with street lights",2
+NULL,"flooded",NULL,"daylight",1
+"dry","reduced width","normal","dusk or dawn",1
+"H","holes","construction","daylight",1
+"H","holes",NULL,"dark with street lights",1
+"H","normal",NULL,"dark with no street lights",1
+"I","normal",NULL,"dark with street lights",1
+"J","normal",NULL,"daylight",1
+"slippery","construction","other","daylight",1
+"slippery","construction","reduced width","dark with no street lights",1
+"slippery","construction",NULL,"dark with no street lights",1
+"slippery","flooded","other","dark with no street lights",1
+"slippery","flooded",NULL,"dark with no street lights",1
+"slippery","holes","construction","daylight",1
+"slippery","holes","flooded","dark with no street lights",1
+"slippery","holes","loose material","daylight",1
+"slippery","holes","normal","dark with no street lights",1
+"slippery","holes","normal","daylight",1
+"slippery","holes","reduced width","daylight",1
+"slippery","loose material","flooded","daylight",1
+"slippery","loose material","normal","dark with no street lights",1
+"slippery","loose material","normal","daylight",1
+"slippery","loose material","obstruction","dark with street lights",1
+"slippery","loose material","obstruction","dusk or dawn",1
+"slippery","loose material","reduced width","dark with street lights",1
+"dry","reduced width","flooded","daylight",1
+"dry","other","normal","dusk or dawn",1
+"slippery","obstruction","construction","dark with street lights",1
+"slippery","obstruction","construction","daylight",1
+"slippery","obstruction","other","dark with no street lights",1
+"slippery","obstruction",NULL,"dark with no street lights",1
+"slippery","other",NULL,"dark with street lights not functioning",1
+"slippery","reduced width","other","dusk or dawn",1
+"slippery","reduced width",NULL,"dusk or dawn",1
+"slippery",NULL,NULL,"dark with no street lights",1
+"snowy","construction","other","dark with street lights",1
+"snowy","flooded","normal","dark with no street lights",1
+"snowy","flooded","other","dark with no street lights",1
+"snowy","flooded",NULL,"dusk or dawn",1
+"snowy","holes","normal","daylight",1
+"snowy","holes",NULL,NULL,1
+"snowy","loose material","other","daylight",1
+"snowy","loose material","reduced width","dusk or dawn",1
+"dry","obstruction","reduced width","dusk or dawn",1
+"dry","obstruction","other","dusk or dawn",1
+"snowy","obstruction","reduced width","dark with no street lights",1
+"snowy","obstruction",NULL,"dark with street lights not functioning",1
+"snowy","other","normal","dark with street lights",1
+"snowy","other","normal","dusk or dawn",1
+"dry","obstruction","other","dark with street lights not functioning",1
+"snowy","reduced width","normal","daylight",1
+"snowy",NULL,NULL,"dusk or dawn",1
+"wet","construction","flooded","dark with no street lights",1
+"wet","construction","flooded","daylight",1
+"wet","construction","flooded","dusk or dawn",1
+"dry","obstruction","construction","dark with street lights not functioning",1
+"wet","construction","other","dark with street lights",1
+"dry","loose material","obstruction","dusk or dawn",1
+"dry","loose material","obstruction","dark with street lights not functioning",1
+"wet","holes","construction","dark with street lights",1
+"wet","holes","construction","daylight",1
+"wet","holes","flooded","dark with no street lights",1
+"wet","holes","flooded","dusk or dawn",1
+"wet","holes","obstruction","dark with street lights",1
+"wet","holes","other","dark with no street lights",1
+"wet","loose material","construction","daylight",1
+"wet","loose material","flooded","daylight",1
+"wet","loose material","normal","dark with street lights",1
+"wet","loose material","other","dark with street lights",1
+"wet","loose material","other","dusk or dawn",1
+"dry","holes","reduced width","dark with no street lights",1
+"dry","holes","other","dark with street lights",1
+"dry","holes","other","dark with no street lights",1
+"wet","obstruction","construction","dark with no street lights",1
+"wet","obstruction","normal","daylight",1
+"wet","obstruction","other","daylight",1
+"dry","holes","obstruction","dusk or dawn",1
+"wet","other","normal","dark with no street lights",1
+"wet","other","normal","dark with street lights",1
+"wet","other","normal","dark with street lights not functioning",1
+"dry","holes","loose material","dusk or dawn",1
+"wet","other",NULL,NULL,1
+"wet","reduced width","other","dark with no street lights",1
+"wet","reduced width","other","daylight",1
+"wet",NULL,NULL,"dark with street lights not functioning",1
+NULL,"construction","normal","dark with street lights",1
+NULL,"construction","normal","daylight",1
+NULL,"flooded","normal","daylight",1
+NULL,"holes","loose material","dark with street lights",1
+NULL,"holes","loose material","daylight",1
+NULL,"loose material",NULL,"dark with street lights",1
+"dry","flooded","other","daylight",1
+NULL,"obstruction","reduced width",NULL,1
+NULL,"obstruction",NULL,"dark with no street lights",1
+NULL,"obstruction",NULL,"daylight",1
+NULL,"other",NULL,"dark with no street lights",1
+"dry","construction","normal","dark with street lights not functioning",1
+NULL,"other",NULL,"dusk or dawn",1
+NULL,"reduced width",NULL,"dusk or dawn",1
+"dry","construction","other","dusk or dawn",1
+"dry","reduced width","other","dusk or dawn",1
