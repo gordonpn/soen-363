@@ -113,6 +113,7 @@ CREATE TABLE parties (
 
 CREATE TABLE victims (
   id int,
+  PRIMARY KEY (id),
   case_id text NOT NULL,
   FOREIGN KEY (case_id) REFERENCES collisions (case_id),
   party_number int NOT NULL,
