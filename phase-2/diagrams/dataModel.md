@@ -1,6 +1,6 @@
 Collection: collisions
 
-```json
+```
 {
     _id: ObjectId('605cfac3f3f46c5219b05032'),
     case_id: <reference_id1>,
@@ -82,7 +82,7 @@ Collection: collisions
 
 Collection: parties
 
-```json
+```
 {
     _id: ObjectId('605cfb2c2a4453cbc48d1931'),
     id: 6465399,
@@ -121,7 +121,7 @@ Collection: parties
 
 Collection: victims
 
-```json
+```
 {
     _id: ObjectId('605cfb7b65049b3c05853ba2'),
     id: 3554388,
