@@ -1,5 +1,4 @@
 -- Before materialized views, the query run time was 5 min 5 secs, after materialized views 1 min 5 secs
-
 CREATE MATERIALIZED VIEW AGE_GAP AS
 SELECT
   GET_AGE_GAP (M.YEAR) AS GAP,

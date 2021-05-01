@@ -1,2 +1,0 @@
-The hypothesis is false, the movies with the most ratings are neither
-the highest or lowest rated movies.

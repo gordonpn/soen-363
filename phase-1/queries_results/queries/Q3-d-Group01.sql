@@ -7,3 +7,4 @@ FROM
 ORDER BY
   m.year ASC,
   m.rating DESC;
+
